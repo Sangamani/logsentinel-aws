@@ -119,5 +119,5 @@ Subject: [ALERT] 1 error(s) in /app/nodejs/production
 
 ## Author
 
-Mani — AWS Cloud Project
-GitHub: github.com/yourusername
+Sangamani -AWS Cloud Project
+GitHub: https://github.com/Sangamani
