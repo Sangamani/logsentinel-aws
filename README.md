@@ -8,16 +8,22 @@ An automated log analysis pipeline built on AWS that monitors,
 classifies, and alerts on application errors in real time.
 
 ## Architecture
-
-EC2 (Node.js logs)
-      ↓
-CloudWatch Logs
-      ↓
+EC2 (Node.js Application Logs)
+        │
+        ▼
+CloudWatch Logs (Log Group)
+        │
+        ▼
 Subscription Filter
-      ↓
-Lambda Function       (log analysis + severity classification)
-      ↓                        ↓                    ↓
-S3 (store)            CloudWatch Dashboard    SNS (email alerts)
+        │
+        ▼
+AWS Lambda (Log Processing & AI Analysis)
+        │
+   ┌────┼───────────────┐
+   ▼    ▼               ▼
+S3   CloudWatch     SNS (Email Alerts)
+(Store Logs) Dashboard   (Notifications)
+
 
 ## Features
 
