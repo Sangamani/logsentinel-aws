@@ -82,7 +82,7 @@ logsentinel-aws/
 | Low | WARN, WARNING, DEPRECATED, SLOW |
 | Info | Everything else |
 
-## Sample S3 Output
+## Sample S3 OutpuT
 
 {
   "log_group": "/app/nodejs/production",
